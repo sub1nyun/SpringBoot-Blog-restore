@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;blog/src/main/resources/static/image/kakao_login_button.png.png&apos; to &apos;kakao_login_button.png&apos;" description="Rename resource &apos;kakao_login_button.png.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/static/image/kakao_login_button.png.png" name="kakao_login_button.png" stamp="1681481464607" updateReferences="true"/>
+</session>

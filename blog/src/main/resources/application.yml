@@ -1,0 +1,28 @@
+
+server:
+  port: 8000
+  servlet:
+    context-path: /
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    username: cos
+    password: cos1234
+    
+  jpa:
+    open-in-view: true # -> LAZY 로딩이 가능해짐
+    hibernate:
+      ddl-auto: update #table을 새로 만들겠다는 의미 -> 프로젝트를 실행할때 -> 최초에만 해야함 -> update로 변경
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        #Entity -> table을 만들때 변수명 그대로 DB에 테이블에 만들어줌
+      use-new-id-generator-mappings: false  
+    show-sql: true
+
